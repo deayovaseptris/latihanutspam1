@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magic Number"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHint"
+        android:layout_centerHorizontal="true"
+        android:text="Tebak angka dari 1 sampai 100!"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstruction"
+        android:layout_centerHorizontal="true"
+        android:text="Jumlah tebakan: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textGuessHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAttempts"
+        android:layout_centerHorizontal="true"
+        android:text="Angka yang kamu pikirkan?"
+        android:textSize="18sp"
+        android:textColor="#808080"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGuessHint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editGuess"
+        android:layout_centerHorizontal="true"
+        android:text="Tebak" />
+
+</RelativeLayout>
